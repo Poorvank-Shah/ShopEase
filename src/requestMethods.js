@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const BASE_URL = "http://localhost:5000/api/";
-const BASE_URL = "https://store-api-6cny.onrender.com";
+const BASE_URL = "https://store-api-6cny.onrender.com/";
 
 // const TOKEN = () => {
 //   if (localStorage.getItem("persist:root") === null) { return null; }
