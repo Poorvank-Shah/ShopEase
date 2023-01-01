@@ -220,7 +220,8 @@ const Cart = () => {
             <Wrapper>
                 <Title></Title>
                 <Top>
-                    <TopButton>CONTINUE SHOPPING</TopButton>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <TopButton>CONTINUE SHOPPING</TopButton> </Link>
                     <TopTexts>
                         <TopText>Shopping Bag(2)</TopText>
                         <TopText>Your Wishlist (0)</TopText>
