@@ -79,10 +79,10 @@ const Login = () => {
   const handleClick = (e) => {
     e.preventDefault();
     login(dispatch, { username, password });    
-    !error && window.location.reload();
-    setTimeout(() => {
-      window.location.reload();
-    }, 5000)
+//     !error && window.location.reload();
+//     setTimeout(() => {
+//       window.location.reload();
+//     }, 5000)
   }
 
   return (
