@@ -71,17 +71,21 @@ const Product = ({ item }) => {
       <Circle />
       <Image src={item.img} />
       <Info>
-        <NavLink to={`/product/${item._id}`} style={{color:"black"}}>
-          <Icon>
+        <Icon >
+          <NavLink to={`/product/${item._id}`} style={{ color: "black" }}>
             <ShoppingCartOutlinedIcon />
-          </Icon>
-          <Icon>
-            <SearchOutlinedIcon />            
-          </Icon>
-          <Icon>
+          </NavLink>
+        </Icon>
+        <Icon>
+          <NavLink to={`/product/${item._id}`} style={{ color: "black" }}>
+            <SearchOutlinedIcon />
+          </NavLink>
+        </Icon>
+        <Icon>
+          <NavLink to={`/product/${item._id}`} style={{ color: "black" }}>
             <FavoriteBorderOutlinedIcon />
-          </Icon>
-        </NavLink>
+          </NavLink>
+        </Icon>
       </Info>
     </Container>
   )
