@@ -17,7 +17,7 @@ const Announcement = () => {
         <Container>
           <Marquee gradient={false}>
             Super Deal! Free Shipping on Orders Over ₹500
-          <Marquee>
+          </Marquee>
         </Container>
     )
 }
