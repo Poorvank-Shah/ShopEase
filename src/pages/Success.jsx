@@ -39,7 +39,7 @@ const Success = () => {
         }
         let flag = 0;
         data && !flag && createOrder();
-    }, [cart, data, currentUser]);
+    }, [ data, currentUser]);
 
     return (
         <div
