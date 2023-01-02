@@ -30,6 +30,7 @@ const Success = () => {
                     status: "pending"
                 });
                 setOrderId(res.data._id);
+                flag=1;
                 dispatch(clearCart());
                 setTimeout(() => {
                     navigate("/");
