@@ -53,9 +53,8 @@ const Success = () => {
         >
             {orderId
                 ? 
-                // `Order has been created successfully. 
-                // Your order number is ${orderId}`
-                `Order has been created successfully.`
+                `Order has been created successfully. 
+                 Your order number is ${orderId}`    
                 : `Successfull. Your order is being prepared...`}
             <Link to="/">
                 <button style={{ padding: 10, marginTop: 20 }}>Going to Homepage in 3sec...</button>
