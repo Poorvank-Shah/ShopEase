@@ -88,9 +88,7 @@ import { mobile } from "../responsive";
         <Left>
           <Logo>POORVANK.</Logo>
           <Desc>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don’t look even slightly believable.
+            Our mission is to provide you with best online shopping experiece. <br />Thank you for visting Poorvank's Store.
           </Desc>
           <SocialContainer>
             <SocialIcon color="3B5999">
