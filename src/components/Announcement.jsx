@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Marquee from "react-fast-marquee";
 
 const Container = styled.div`
   height: 30px;
@@ -14,7 +15,9 @@ const Container = styled.div`
 const Announcement = () => {
     return (
         <Container>
+          <Marquee gradient={false}>
             Super Deal! Free Shipping on Orders Over ₹500
+          <Marquee>
         </Container>
     )
 }
