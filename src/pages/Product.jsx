@@ -115,6 +115,7 @@ const Amount = styled.span`
 
 const Button = styled.button`
   padding: 15px;
+  min-width: 120px;
   border: 2px solid teal;
   background-color: white;
   cursor: pointer;
@@ -158,10 +159,15 @@ const Product = () => {
   };
 
   // MANAGE ADD TO CART
+  const [handleDisable, setHandleDisable] = useState(true);
   const handleClick = () => {
+    setHandleDisable(false);
     dispatch(
       addProduct({ ...product, quantity, color, size })
     );
+    setTimeout(() => {
+      setHandleDisable(true);
+    }, 5000);
   };
 
   return (
@@ -208,7 +214,10 @@ const Product = () => {
               <Amount>{quantity}</Amount>
               <Add onClick={() => handleQuantity("inc")} />
             </AmountContainer>
-            <Button onClick={handleClick} >ADD TO CART</Button>
+            {handleDisable ? <Button onClick={handleClick}>ADD TO CART</Button>
+              :
+              <Button style={{backgroundColor: "#cecece"}}>ITEM   ADDED</Button>
+            }
           </AddContainer>
         </InfoContainer>
       </Wrapper>
