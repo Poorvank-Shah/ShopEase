@@ -36,7 +36,7 @@ const Success = () => {
             } catch { }
         }
         data && createOrder();
-    }, [ ]);
+    }, []);
 
     return (
         <div
