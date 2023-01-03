@@ -4,11 +4,13 @@ import Footer from '../components/Footer'
 import styled from 'styled-components'
 import { Add, Remove } from '@mui/icons-material'
 import { mobile } from '../responsive'
-import { useSelector } from 'react-redux'
+import { useDispatch,useSelector } from 'react-redux'
 import StripeCheckout from "react-stripe-checkout"
 import { Link, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import { userRequest } from "../requestMethods";
+import { removeProduct } from '../redux/cartRedux';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const Container = styled.div``
 
@@ -127,7 +129,7 @@ const ProductAmount = styled.div`
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
-  ${mobile({ marginBottom: "20px" })}
+  marginBottom: 20px;
 `;
 
 const Hr = styled.hr`
@@ -212,7 +214,12 @@ const Cart = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps  
     }, [stripeToken, cart.total, navigate]);
 
-
+    const dispatch = useDispatch();
+    const handleClick = (id, amount) => {
+        dispatch(
+            removeProduct({ id, amount })
+        );
+    }
     return (
         <Container>
             <Navbar />
@@ -248,6 +255,7 @@ const Cart = () => {
                                         <Remove />
                                     </ProductAmountContainer>
                                     <ProductPrice>₹ {product.price * product.quantity}</ProductPrice>
+                                    <DeleteIcon sx={{ color: "red", fontSize: 30, cursor: "pointer", marginBottom: "20px" }} onClick={() => { handleClick(product._id, product.price * product.quantity) }} />
                                 </PriceDetail>
                             </Product>
                         ))}
