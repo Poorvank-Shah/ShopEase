@@ -36,7 +36,7 @@ const Success = () => {
             } catch { }
         }
         data && createOrder();
-    }, []);
+    }, [cart,data,currentUser]);
 
     return (
         <div
