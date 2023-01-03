@@ -129,7 +129,7 @@ const ProductAmount = styled.div`
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
-  marginBottom: 20px;
+  margin-bottom: 20px;
 `;
 
 const Hr = styled.hr`
