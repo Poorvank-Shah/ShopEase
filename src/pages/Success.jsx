@@ -18,7 +18,6 @@ const Success = () => {
     useEffect(() => {
         const createOrder = async () => {
             try {
-                if(flag===1){return;}
                 const res = await userRequest.post("/orders", {
                     userId: currentUser._id,
                     products: cart.products.map((item) => ({
@@ -30,15 +29,13 @@ const Success = () => {
                     status: "pending"
                 });
                 setOrderId(res.data._id);
-                flag=1;
                 dispatch(clearCart());
                 setTimeout(() => {
                     navigate("/");
                 }, 3000)
             } catch { }
         }
-        let flag = 0;
-        data && !flag && createOrder();
+        data && createOrder();
     }, [ ]);
 
     return (
