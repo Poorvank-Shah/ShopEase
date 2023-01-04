@@ -33,6 +33,7 @@ const Success = () => {
             } catch { }
         }
         data && createOrder();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -57,8 +58,7 @@ const Success = () => {
                 : `Successfull. Your order is being prepared...`}
             <Link to="/">
                 <button onclick={() => navigate('/')} style={{
-                    padding: 10, marginTop: 20, fontSize: "15px", fontWeight: "bold",
-                }}>Click to Redirect to Homepage </button>
+                    padding: 10, marginTop: 20, fontSize: "15px", fontWeight: "bold", cursor: "pointer"}}>Click to Redirect to Homepage</button>
             </Link>
         </div>
     );
