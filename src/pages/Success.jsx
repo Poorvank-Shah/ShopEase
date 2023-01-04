@@ -29,11 +29,7 @@ const Success = () => {
                     status: "pending"
                 });
                 setOrderId(res.data._id);
-                dispatch(clearCart());                
-                
-//                 setTimeout(() => {
-//                     navigate("/");
-//                 }, 3000)
+                dispatch(clearCart());                                
             } catch { }
         }
         data && createOrder();
@@ -47,6 +43,11 @@ const Success = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                fontSize: "20px",
+                flexWrap: "wrap",
+                fontWeight: "400",
+                padding: "20px",
+                textAlign: "center"
             }}
         >
             {orderId
@@ -55,7 +56,9 @@ const Success = () => {
                  Your order number is ${orderId}`    
                 : `Successfull. Your order is being prepared...`}
             <Link to="/">
-                <button onclick={() => navigate('/')} style={{ padding: 10, marginTop: 20 }}>Going to Homepage in 3sec...</button>
+                <button onclick={() => navigate('/')} style={{
+                    padding: 10, marginTop: 20, fontSize: "15px", fontWeight: "bold",
+                }}>Click to Redirect to Homepage </button>
             </Link>
         </div>
     );
