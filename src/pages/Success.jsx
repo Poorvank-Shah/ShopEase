@@ -29,14 +29,15 @@ const Success = () => {
                     status: "pending"
                 });
                 setOrderId(res.data._id);
-                setTimeout(() => {
-                    dispatch(clearCart());                
-                    navigate("/");
-                }, 3000)
+                dispatch(clearCart());                
+                
+//                 setTimeout(() => {
+//                     navigate("/");
+//                 }, 3000)
             } catch { }
         }
         data && createOrder();
-    }, [cart,data,currentUser]);
+    }, []);
 
     return (
         <div
@@ -54,7 +55,7 @@ const Success = () => {
                  Your order number is ${orderId}`    
                 : `Successfull. Your order is being prepared...`}
             <Link to="/">
-                <button style={{ padding: 10, marginTop: 20 }}>Going to Homepage in 3sec...</button>
+                <button onclick={() => navigate('/')} style={{ padding: 10, marginTop: 20 }}>Going to Homepage in 3sec...</button>
             </Link>
         </div>
     );
