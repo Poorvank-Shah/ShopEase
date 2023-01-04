@@ -50,7 +50,7 @@ const Input = styled.input`
 const Center = styled.div`
   flex : 1;
   text-align: center;
-  ${mobile({ marginLeft: "10px" })};
+    ${mobile({ marginLeft: "20px", textAlign: "left" ,flex :2})};
 `
 const Logo = styled.h1`
   font-weight: bold;
