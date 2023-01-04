@@ -29,8 +29,8 @@ const Success = () => {
                     status: "pending"
                 });
                 setOrderId(res.data._id);
-                dispatch(clearCart());
                 setTimeout(() => {
+                    dispatch(clearCart());                
                     navigate("/");
                 }, 3000)
             } catch { }
