@@ -71,7 +71,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  ${mobile({ flex: 1, justifyContent: "center" })}
+  ${mobile({ flex: 1, justifyContent: "center",marginRight:"5px" })}
 
 `
 
