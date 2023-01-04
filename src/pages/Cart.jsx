@@ -255,7 +255,7 @@ const Cart = () => {
                                         <Remove />
                                     </ProductAmountContainer>
                                     <ProductPrice>₹ {product.price * product.quantity}</ProductPrice>
-                                    <DeleteIcon sx={{ color: "red", fontSize: 30, cursor: "pointer", marginBottom: "20px" }} onClick={() => { handleClick(product._id, product.price * product.quantity) }} />
+                                    <DeleteIcon sx={{ color: "black", fontSize: 30, cursor: "pointer", marginBottom: "20px" }} onClick={() => { handleClick(product._id, product.price * product.quantity) }} />
                                 </PriceDetail>
                             </Product>
                         ))}
