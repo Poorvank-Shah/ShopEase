@@ -17,8 +17,14 @@ const Success = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         const createOrder = async () => {
+            const TOKEN = localStorage.getItem("persist:root") === null ? null : 
+            JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser === null ? null : 
+            JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken
             try {
-                const res = await userRequest.post("/orders", {
+                const res = await axios.create({
+                    baseURL: "https://store-api-6cny.onrender.com/",
+                    headers: { token: `Bearer ${TOKEN}` },
+                }).post("/orders", {
                     userId: currentUser._id,
                     products: cart.products.map((item) => ({
                         productId: item._id,
@@ -29,7 +35,7 @@ const Success = () => {
                     status: "pending"
                 });
                 setOrderId(res.data._id);
-                dispatch(clearCart());                                
+                dispatch(clearCart());
             } catch { }
         }
         data && createOrder();
