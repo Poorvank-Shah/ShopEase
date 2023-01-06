@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { clearCart } from "../redux/cartRedux";
 import { userRequest } from "../requestMethods";
+import axios from "axios";
 
 const Success = () => {
     const navigate = useNavigate();
