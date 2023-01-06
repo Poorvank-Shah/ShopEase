@@ -141,7 +141,7 @@ const Register = () => {
         password: pwd,
         img: url,
       });
-      console.log(res.data)
+//       console.log(res.data)
       setWait(false);
       setSuccess(true);
       setTimeout(() => {
@@ -193,7 +193,6 @@ const Register = () => {
           // Handle successful uploads on complete
           // For instance, get the download URL: https://firebasestorage.googleapis.com/...
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            console.log(downloadURL);
             setUrl(downloadURL);
           });
         }
