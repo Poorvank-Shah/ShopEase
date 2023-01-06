@@ -110,7 +110,8 @@ const Register = () => {
   const [uname, setUname] = useState("");
   const [pwd, setPwd] = useState("");
   const [email, setEmail] = useState("");
-  const [file, setFile] = useState(null)
+  const [file, setFile] = useState(null);
+  const [prog, setProg] = useState(0);
   const [url, setUrl] = useState("https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif")
   const [wait, setWait] = useState(false);
   const [error, setError] = useState(false);
@@ -159,6 +160,7 @@ const Register = () => {
         (snapshot) => {
           // Observe state change events such as progress, pause, and resume
           // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+          setProg((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
           const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           console.log('Upload is ' + progress + '% done');
           switch (snapshot.state) {
@@ -193,6 +195,7 @@ const Register = () => {
         <Form>
           <Image src= {url} />
           <ImgInput type="file" onChange={(e) => setFile(e.target.files[0])} />
+          {prog!=0 && prog!=100 && <Text> Uploading is {Math.trunc(prog)}% done</Text>}
           <ProfileText> Profile Picture </ProfileText>
           <Input placeholder="name" />
           <Input placeholder="last name" />
