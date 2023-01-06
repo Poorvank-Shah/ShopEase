@@ -9,14 +9,14 @@ export const sliderItems = [
     {
         id: 2,
         // img: "https://i.ibb.co/DG69bQ4/2.png",
-        img: "https://www.nicepng.com/png/full/8-88585_women-fashion-png-example-of-magazine-cover.png",
+        img: "https://www.parkgrandlondon.co.uk/blog/wp-content/uploads/2018/10/SHOP.jpg",
         title: "AUTUMN COLLECTION",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fcf1ed",
     },
     {
         id: 3,
-        img: "https://i.ibb.co/cXFnLLV/3.png",
+        img: "https://media.istockphoto.com/id/1073935306/photo/girls-carrying-shopping-bags.jpg?s=612x612&w=0&k=20&c=JB-TrME32dc0VTnaXVxsbJIExZqR71m-iyVOnG-7puM=",
         title: "LOUNGEWEAR LOVE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fbf0f4",
