@@ -57,7 +57,7 @@ const Success = () => {
                  Your order number is ${orderId}`    
                 : `Successfull. Your order is being prepared...`}
             <Link to="/">
-                <button onclick={() => navigate('/')} style={{
+                <button onClick={() => navigate('/')} style={{
                     padding: 10, marginTop: 20, fontSize: "15px", fontWeight: "bold", cursor: "pointer"}}>Click to Redirect to Homepage</button>
             </Link>
         </div>
