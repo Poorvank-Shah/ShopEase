@@ -57,6 +57,18 @@ const Image = styled.img`
   object-fit: contain;
   ${mobile({ maxWidth: "40%", maxHeight: "40%" })}
 `
+const Text = styled.div`
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  color: black;
+  font-size:15px;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  ${mobile({ marginLeft: "0" })}
+`
+
 const ProfileText = styled.div`
   text-align: center;
   align-items: center;
@@ -67,8 +79,9 @@ const ProfileText = styled.div`
   text-align: left;
   margin-left: 10px;
   margin-top: 10px;
-  ${mobile({ marginTop: "10px", marginLeft: "0" })}
+  ${mobile({ marginLeft: "0" })}
 `
+
 const Agreement = styled.div`
   font-size: 12px;
   margin: 20px 0px;
