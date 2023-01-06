@@ -180,7 +180,7 @@ const Cart = () => {
     const navigate = useNavigate();
 
     const onToken = (token) => {
-        console.log(token);
+//         console.log(token);
         setStripeToken(token);
     };
 
@@ -193,7 +193,7 @@ const Cart = () => {
                     amount: cart.total * 100,
                     card: stripeToken.card,
                 });
-                console.log(res.data);
+//                 console.log(res.data);
                 console.log(cart);
                 navigate("/success", {
                     state: {
