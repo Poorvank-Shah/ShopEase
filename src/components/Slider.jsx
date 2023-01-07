@@ -41,12 +41,13 @@ const Slide = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex: 1;
     justify-content: space-around;
     align-items: center;
     background-color: #${props => props.bg};
 `
 const ImageContainer = styled.div`
-    flex: 1;
+    flex: 2;
     height: 100%;
 `
 const InfoContainer = styled.div`
@@ -55,6 +56,7 @@ const InfoContainer = styled.div`
 `
 const Image = styled.img`
   height: 80%;
+  width: 100%;
 `;
 
 const Title = styled.h1`
