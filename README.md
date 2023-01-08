@@ -1,6 +1,6 @@
 Its a completely functioning e-commerce website where you can register, sign in, do shopping, add products to cart , do payments, place orders, etc. along with security and password protection.
 
-Website Link : store-qsts.onrender.com/
+Website Link : [Poorvank's Store](https://store-qsts.onrender.com/)
 
 
 # Getting Started with Create React App
