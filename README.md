@@ -3,12 +3,12 @@ It's a completely functioning e-commerce website where you can register, sign in
 The technical features of the website are User Authentication, Responsive Design, Product Catalog, Sort & Filter, Shopping Cart, Payment Gateway Integration, etc.
 
 Tech Stack Used:
--Frontend: Javascript, React, Redux
--Backend: NodeJs, Express
--Database: MongoDB
--Other Tools: Stripe (for checkout), JWT Webtokens & CryptoJs (for security and encryption), Material UI (for Icons)
+- Frontend: Javascript, React, Redux
+- Backend: NodeJs, Express
+- Database: MongoDB
+- Other Tools: Stripe (for checkout), JWT Webtokens & CryptoJs (for security and encryption), Material UI (for Icons)
 
-Website Link : [Poorvank's Store](https://store-qsts.onrender.com/)
+Website Link : [Poorvank's Store](https://store-qsts.onrender.com/) 
 
 
 # Getting Started with Create React App
