@@ -95,7 +95,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Link to="/" style={{ textDecoration: 'none' }}><Logo>Poorvank</Logo></Link>
+          <Link to="/" style={{ textDecoration: 'none' }}><Logo>ShopEase</Logo></Link>
         </Center>
         {user ?
           <Right>
