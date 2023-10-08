@@ -9,7 +9,7 @@ export const sliderItems = [
     {
         id: 2,
         // img: "https://i.ibb.co/DG69bQ4/2.png",
-        img: "https://www.parkgrandlondon.co.uk/blog/wp-content/uploads/2018/10/SHOP.jpg",
+        img: "https://img.freepik.com/premium-photo/stylish-woman-with-shopping-bags-walks-through-city-streets-consumerism-shopping-lifestyle-concept_217236-18721.jpg?w=2000",
         title: "AUTUMN COLLECTION",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fcf1ed",
